@@ -33,8 +33,8 @@ public:
   template<typename U>
   Matrix& operator=(const Matrix_ref<U,N>&) ;         // assign from Matrix_ref
 
-  template<typename..Exts>
-  explicit Matrix(Exts..exts) ;                          // specify the extents
+  template<typename... Exts>
+  explicit Matrix(Exts... exts) ;                        // specify the extents
 
   Matrix( Matrix_initializer<T,N> ) ;                   // initialize from list
   Matrix& operator=( Matrix_initializer<T,N> ) ;            // assign from list
